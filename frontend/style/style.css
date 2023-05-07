@@ -1,0 +1,52 @@
+html {
+  background: linear-gradient(
+    10.32deg,
+    #2f244d 12.47%,
+    #6e3690 25.69%,
+    #ffece4 48.29%,
+    #6e3690 73.87%,
+    #2f244d 94.34%,
+    #2f244d 94.34%
+  );
+}
+
+body {
+  font-family: "KCCChassam";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 54px;
+  color: #f0eb8d;
+}
+
+.title_box_text-1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.title_box_text-2 {
+  font-size: 75px;
+  margin-bottom: 38px;
+}
+
+.sub_title {
+  margin-bottom: 32px;
+  text-align: center;
+  color: white;
+}
+
+img {
+}
