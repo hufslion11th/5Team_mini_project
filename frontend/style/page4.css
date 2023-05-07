@@ -1,0 +1,112 @@
+/* body {
+    font-family: "KCCChassam";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }  */
+
+
+
+.box {
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(10.32deg, #2F244D 12.47%, #6E3690 25.69%, #FFECE4 48.29%, #6E3690 73.87%, #2F244D 94.34%,#2F244D 94.34% );
+
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img{
+    height: 134px;
+    width: 116px;
+    margin-top:68px;
+    text-align: center;
+}
+
+
+
+.word1{
+    font-family: "KCCChassam";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+
+    margin-top: 24px;
+}
+
+.word2{
+    font-family: "KCCChassam";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+
+    margin-top: 10px;
+}
+
+
+img{
+    width: 106px;
+    height: 202px;
+    margin: 50px 24px 24px ;
+
+}
+
+/* .card_name{
+    font-family: "KCCChassam";
+    color: white;
+    font-size: 23px;
+    word-spacing: ;
+
+} */
+
+#card_list > li {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 260px;
+  }
+  #card_list > li > a {
+    display:block; position:relative; padding-bottom:19px;
+    margin: 50px;
+  }
+  #card_list > li > a > img {
+    width:50px; height:50px;
+  }
+  #card_list > li > a > span {
+    position:absolute; 
+    bottom:0; left:50%; 
+    color:#666; line-height:1.462em; 
+    white-space:nowrap; transform:translate(-50%, 0);
+  }
+
+button{
+    font-family: "KCCChassam";
+    width: 186px;
+    height: 57px;
+    left: 102px;
+    top: 673px;
+    background-color: #C0C7FF;
+    border-radius: 40px;
+    box-shadow: 6px 4px 20px rgba(0, 0, 0, 0.25);
+
+    font-size: 25px;
+    border:1px;
+    color:#2F244D;
+    position: absolute;
+
+    top: 50%;
+    left: 43%;
+    
+    margin-top: 86px;
+}
+
