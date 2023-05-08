@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./style/reset.css" rel="stylesheet">
-    <link href="page4.css" rel="stylesheet">
-    <script src="page4.js"></script>
+    <link href="/frontend/style/reset.css" rel="stylesheet" />
+    <link href="/frontend/style/page4.css" rel="stylesheet" />
+  </head>
 
-   
-
-</head>
-
-<body>
+  <body>
     <div class="box">
-        <img src="tataro.png" />
-        <div class="word">
-            <div class="word1">짠!</div>
-    
-            <div class="word2">이게 너가 뽑은 카드야</div>
-        </div>
-        
-        <!-- <div id="cards">
+      <img src="tataro.png" class="tataro" />
+      <div class="word">
+        <div class="word1">짠!</div>
+        <div class="word2">이게 너가 뽑은 카드야</div>
+      </div>
+
+      <!-- <div id="cards">
              <script type="javascript" src="page4.js"></script>
         </div>  -->
-       <div class="card_box">
-            <img src="/card/image0.jpg">
-            <img src="/card/image0.jpg">
-            <img src="/card/image0.jpg">
-       </div>
-
-       <ul id="card_list">
+      <!-- <ul id="card_list">
         <li><img src="/card/image0.jpg"><p>바보</p></li>
         <li><img src="/card/image0.jpg"><p>심판</p></li>
         <li><img src="/card/image0.jpg"><p>동전의 10</p></li>
-      </ul>
-      
+      </ul> -->
 
-       <!-- <div class = "card_name">
-            <p style="float:left;">바보</p> 
-            <p style=float:left;>심판</p> 
-            <p style="float:left;">동전의 10</p>
-       </div> -->
-       
-       
-        <button id="result">결과보기</button>
+      <div class="card_box">
+        <div class="card">
+          <img
+            class="card_img"
+            src="https://upload.wikimedia.org/wikipedia/ko/thumb/9/9b/RWS_Tarot_07_Chariot.jpg/136px-RWS_Tarot_07_Chariot.jpg"
+            alt=""
+          />
+          <div>제목1</div>
+        </div>
+        <div class="card">
+          <img
+            class="card_img"
+            src="https://upload.wikimedia.org/wikipedia/ko/thumb/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg/139px-RWS_Tarot_10_Wheel_of_Fortune.jpg"
+            alt=""
+          />
+          <div>제목2</div>
+        </div>
+        <div class="card">
+          <img
+            class="card_img"
+            src="https://upload.wikimedia.org/wikipedia/ko/thumb/2/2b/RWS_Tarot_12_Hanged_Man.jpg/136px-RWS_Tarot_12_Hanged_Man.jpg"
+            alt=""
+          />
+          <div>제목3</div>
+        </div>
+      </div>
+      <div id="result">결과보기</div>
     </div>
-        
-</body>
+  </body>
 </html>
