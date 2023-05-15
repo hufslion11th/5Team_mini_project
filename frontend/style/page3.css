@@ -1,0 +1,92 @@
+body {
+    font-family: "KCCChassam";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  } 
+
+
+
+.box {
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(10.32deg, #2F244D 12.47%, #6E3690 25.69%, #F48859 48.29%, #6E3690 73.87%, #2F244D 94.34%);
+        
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.word1{
+    font-family: "KCCChassam";
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    margin-top: 68px;
+}
+
+.tataro{
+
+    height: 263px;
+    width: 181px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+
+.word2{
+    font-family: "KCCChassam";
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    margin-top: 52px;
+
+}
+
+.word3{
+    font-family: "KCCChassam";
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    margin-top: 3px;
+    
+}
+
+.cards{
+    margin-top: 103px;
+
+    width: 3000px;
+    height: 200px;
+    white-space:nowrap;
+    overflow-x: scroll;   
+   
+   
+}
+
+.cards div{
+    float:left;
+}
+
+.tarocards{
+
+    position:relative;
+    z-index: 2;
+    height: 162px;
+    width: 110px;
+
+}
+
+
