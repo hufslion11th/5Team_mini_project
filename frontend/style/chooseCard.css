@@ -1,0 +1,57 @@
+.background {
+  background: linear-gradient(
+    10.32deg,
+    #2f244d 12.47%,
+    #6e3690 25.69%,
+    #f48859 48.29%,
+    #6e3690 73.87%,
+    #2f244d 94.34%
+  );
+  color: white;
+}
+
+.title_box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tataro {
+  width: 150px;
+  height: 200px;
+}
+.sub_title {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 25px;
+}
+
+.choose_card_content {
+  display: flex;
+  height: 230px;
+  width: 100vw;
+}
+.card_box {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+/* .card_box::-webkit-scrollbar {
+  display: none;
+} */
+
+.card {
+  width: 100px;
+  height: 150px;
+  transition: all 0.4s;
+  margin-left: -20px;
+}
+
+.card_onclick {
+  transform: translateY(-30px);
+}
+
+/* .card_off {
+  transform: translateY(0);
+} */
+//모바일에서는 변경 필요
