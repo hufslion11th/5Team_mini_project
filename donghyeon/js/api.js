@@ -46,6 +46,7 @@ const myChat = () => {
   }
   myChatBox.appendChild(myChat);
   totalResultChatBox.appendChild(myChatBox);
+  totalResultChatBox.scrollTop = totalResultChatBox.scrollHeight;
   return myQuestion;
 };
 
@@ -87,6 +88,7 @@ const tataroChat = (assistant, myQuestion) => {
   }
   tataroChatBox.appendChild(tataroChat);
   totalResultChatBox.appendChild(tataroChatBox);
+  totalResultChatBox.scrollTop = totalResultChatBox.scrollHeight;
 };
 
 async function getTaro() {
