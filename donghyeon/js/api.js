@@ -11,15 +11,19 @@ let assistantMessages = [];
 const sendTime = () => {
   const time = new Date();
   const hour = time.getHours();
-  const minutes = time.getMinutes();
+  let minutes = time.getMinutes();
   let meridiem; // 오전, 오후 구분
   let hour2; // 시간
+  let minutes2;
   if (hour < 12) {
     meridiem = "오전";
     hour2 = hour;
   } else {
     meridiem = "오후";
     hour2 = hour - 12;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes.toString();
   }
   const myChatTimeString = `${meridiem} ${hour2}:${minutes}`;
   return myChatTimeString;
@@ -43,6 +47,7 @@ const myChat = () => {
   } else {
     myChat.innerText = chatInput.value;
     userMessages.push(chatInput.value);
+    chatInput.value = "";
   }
   myChatBox.appendChild(myChat);
   totalResultChatBox.appendChild(myChatBox);
@@ -108,7 +113,6 @@ async function getTaro() {
     const data = await response.json();
     assistantMessages.push(data.assistant);
     tataroChat(data.assistant, myQuestion);
-    console.log(data);
     return data;
   } catch (error) {
     console.log(error);

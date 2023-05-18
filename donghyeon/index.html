@@ -171,7 +171,11 @@
           <!-- 타타로의 채팅 끝 -->
         </div>
         <div class="totalResult_inputBox">
-          <input type="text" class="totalResult_input" />
+          <input
+            type="text"
+            class="totalResult_input"
+            onkeypress="if( event.keyCode == 13 ){inputEnterKey();}"
+          />
           <div class="insert_next_button" onclick="getTaro()">
             <div class="triangle"></div>
           </div>
