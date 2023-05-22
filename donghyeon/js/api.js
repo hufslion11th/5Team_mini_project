@@ -42,6 +42,12 @@ const myChat = () => {
   if (!!questionInput.value == true) {
     myChat.innerText = questionInput.value;
     userMessages.push(questionInput.value);
+
+    //카드 세장 뽑기
+    userMessages.push(
+      "https://upload.wikimedia.org/wikipedia/ko/thumb/9/90/RWS_Tarot_00_Fool.jpg/137px-RWS_Tarot_00_Fool.jpg https://upload.wikimedia.org/wikipedia/ko/thumb/d/de/RWS_Tarot_01_Magician.jpg/136px-RWS_Tarot_01_Magician.jpg https://upload.wikimedia.org/wikipedia/ko/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/138px-RWS_Tarot_02_High_Priestess.jpg"
+    );
+
     myQuestion = questionInput.value;
     questionInput.value = "";
   } else {
@@ -51,7 +57,6 @@ const myChat = () => {
   }
   myChatBox.appendChild(myChat);
   totalResultChatBox.appendChild(myChatBox);
-  totalResultChatBox.scrollTop = totalResultChatBox.scrollHeight;
   return myQuestion;
 };
 
@@ -96,10 +101,29 @@ const tataroChat = (assistant, myQuestion) => {
   totalResultChatBox.scrollTop = totalResultChatBox.scrollHeight;
 };
 
+//스피너 추가 함수
+const setSpinner = () => {
+  const spinnerBox = document.createElement("div");
+  spinnerBox.classList.add("spinner");
+  const spinner = document.createElement("div");
+  spinner.classList.add("totalResult_tataroChat");
+  spinner.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+  spinnerBox.appendChild(spinner);
+  totalResultChatBox.appendChild(spinnerBox);
+  totalResultChatBox.scrollTop = totalResultChatBox.scrollHeight;
+};
+
+const eraseSpinner = () => {
+  const spinnerBox = document.querySelector(".spinner");
+  totalResultChatBox.removeChild(spinnerBox);
+};
+
 async function getTaro() {
   try {
+    chatInput.disabled = true;
     const myQuestion = myChat();
     // 타로 질문 주고 결과 받는 api
+    setSpinner();
     const response = await fetch("http://localhost:3000/taro", {
       method: "POST",
       headers: {
@@ -112,7 +136,9 @@ async function getTaro() {
     });
     const data = await response.json();
     assistantMessages.push(data.assistant);
+    eraseSpinner();
     tataroChat(data.assistant, myQuestion);
+    chatInput.disabled = false;
     return data;
   } catch (error) {
     console.log(error);

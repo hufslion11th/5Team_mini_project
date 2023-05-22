@@ -59,9 +59,16 @@
   justify-content: center;
   padding: 15px;
   line-height: 23px;
-  display: flex;
   flex-direction: column;
+  text-align: center;
 }
+.spinner {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  margin: 15px 0px;
+}
+
 .totalResult_tataroChatTime {
   font-size: 7px;
   position: absolute;

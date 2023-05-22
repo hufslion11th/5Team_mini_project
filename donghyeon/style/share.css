@@ -109,6 +109,7 @@
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
+  overflow-y: scroll;
 }
 @media (max-width: 768px) {
   .share_Box {
