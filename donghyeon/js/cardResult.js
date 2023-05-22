@@ -344,7 +344,6 @@ const firstImg = document.querySelector("#card1_img");
 const secondImg = document.querySelector("#card2_img");
 const thirdImg = document.querySelector("#card3_img");
 
-console.log(selectTaro);
 firstTitle.innerText = selectTaro[0][0];
 secondTitle.innerText = selectTaro[1][0];
 thirdTitle.innerText = selectTaro[2][0];
