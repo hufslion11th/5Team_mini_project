@@ -43,10 +43,8 @@ const myChat = () => {
     myChat.innerText = questionInput.value;
     userMessages.push(questionInput.value);
 
-    //카드 세장 뽑기
-    userMessages.push(
-      "https://upload.wikimedia.org/wikipedia/ko/thumb/9/90/RWS_Tarot_00_Fool.jpg/137px-RWS_Tarot_00_Fool.jpg https://upload.wikimedia.org/wikipedia/ko/thumb/d/de/RWS_Tarot_01_Magician.jpg/136px-RWS_Tarot_01_Magician.jpg https://upload.wikimedia.org/wikipedia/ko/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/138px-RWS_Tarot_02_High_Priestess.jpg"
-    );
+    //카드 세장 뽑기 프론트 버전
+    userMessages.push(`${selectTaro[0][1]} ${selectTaro[1][1]} ${selectTaro[2][1]}`);
 
     myQuestion = questionInput.value;
     questionInput.value = "";
