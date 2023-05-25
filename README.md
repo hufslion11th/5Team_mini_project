@@ -34,9 +34,9 @@ Backend : `AWS lambda`
 ![setting](https://github.com/Hellol77/Tataro/assets/76903801/892ab742-ddb6-43b5-86bd-31905d94e4b8)
 
 
-- ### chatGPT에게 역활 부여
+- ### chatGPT에게 역할 부여
 
-system으로 `chatGPT`에게 역활을 부여한다. user로 다시 역활을 말해주면 더 명확하게 부여해줄수 있습니다.
+system으로 `chatGPT`에게 역할을 부여한다. user로 다시 역활을 말해주면 더 명확하게 부여해줄수 있습니다.
 
 ```
 app.post("/taro", async function (req, res) {
