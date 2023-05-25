@@ -65,7 +65,7 @@ app.post("/taro", async function (req, res) {
 
 카드 데이터와 질문내용을 `chatGPT`에게 보내고 답변을 받는 getTaro 함수 입니다.
 
-![getTaro2](https://github.com/Hellol77/Tataro/assets/76903801/d1ff2d20-69a7-45c4-ac78-331fdc4b3673)
+![codetaro](https://github.com/hufslion11th/5Team_mini_project/assets/76903801/d58f6ffd-8dc8-4ea1-8a7a-c892aab82448)
 
 
 
