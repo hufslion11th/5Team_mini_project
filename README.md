@@ -1,5 +1,19 @@
-# 5Team_mini_project
 # 타로보는 타타로 https://tataro.pages.dev/
+
+
+- ### 멋쟁이 사자처럼 미니프로젝트를 배포하기 위한 repository입니다.
+https://github.com/hufslion11th/5Team_mini_project
+
+- ## 사용자수 통계
+<img width="801" alt="image" src="https://github.com/Hellol77/Tataro/assets/76903801/91c688c9-6c81-4616-8a69-5a50e48e4412">
+
+
+
+- ## 에브리타임 공감 100개 달성! BEST게시판 게시!
+<img width="613" alt="image" src="https://github.com/Hellol77/Tataro/assets/76903801/9355e8de-d962-43ab-a5a1-befd11d9deda">
+
+
+---
 
 <div align="center">
   <img width="320" alt="image" src="https://github.com/Hellol77/Tataro/assets/76903801/cdcb9850-a8af-4f5f-969e-a768e8d1ded3">
@@ -34,9 +48,9 @@ Backend : `AWS lambda`
 ![setting](https://github.com/Hellol77/Tataro/assets/76903801/892ab742-ddb6-43b5-86bd-31905d94e4b8)
 
 
-- ### chatGPT에게 역할 부여
+- ### chatGPT에게 역활 부여
 
-system으로 `chatGPT`에게 역할을 부여한다. user로 다시 역활을 말해주면 더 명확하게 부여해줄수 있습니다.
+system으로 `chatGPT`에게 역활을 부여한다. user로 다시 역활을 말해주면 더 명확하게 부여해줄수 있습니다.
 
 ```
 app.post("/taro", async function (req, res) {
@@ -65,8 +79,7 @@ app.post("/taro", async function (req, res) {
 
 카드 데이터와 질문내용을 `chatGPT`에게 보내고 답변을 받는 getTaro 함수 입니다.
 
-![codetaro](https://github.com/hufslion11th/5Team_mini_project/assets/76903801/d58f6ffd-8dc8-4ea1-8a7a-c892aab82448)
-
+![getTaro2](https://github.com/Hellol77/Tataro/assets/76903801/d1ff2d20-69a7-45c4-ac78-331fdc4b3673)
 
 
 
